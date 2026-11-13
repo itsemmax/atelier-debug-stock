@@ -43,7 +43,7 @@ formulaire.addEventListener("submit", function (event) {
   const nom = champNom.value.trim();
   const quantite = champQuantite.value;
 
-  if (nom === "" && champQuantite.value === "") {
+  if (nom === "" || champQuantite.value === "") {
     message.textContent = "Renseignez le nom et la quantité.";
     return;
   }
